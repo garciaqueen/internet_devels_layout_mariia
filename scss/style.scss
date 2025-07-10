@@ -1,7 +1,55 @@
-$main-color: #3498db;
+$main-color: #333; // Заміни на колір з макету
 
 body {
-  font-family: sans-serif;
-  background-color: $main-color;
-  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+
+  .container {
+    max-width: 1220px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  .logo-pic img {
+    width: 70px;
+    height: 70px;
+    display: block;
+  }
+
+  .main-menu {
+    .menu-list {
+      display: flex;
+      gap: 10px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .btn-app {
+        background-color: rgb(0, 87, 187);
+        border-radius: 25px;
+        a {
+          color: aliceblue;
+        }
+      }
+      .nav-link {
+        text-decoration: none;
+        color: $main-color;
+        font-weight: 400;
+        transition: color 0.2s ease;
+        
+      }
+    }
+  }
 }
