@@ -1,13 +1,22 @@
-$main-color: #333; // Заміни на колір з макету
+$main-color: #5f5e5e; // Заміни на колір з макету
+
+.open-sans-class {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
   width: 100%;
+  line-height: 22px;
 }
 .wrapper {
-  padding-top: 110px;
+  padding-top: 97px;
 }
 .header {
   background-color: white;
@@ -41,7 +50,27 @@ body {
     text-decoration: none;
   }
 }
+.content-first {
+  background-color: #f1f1f1;
+  height: 670px;
+}
 
+.content-first .container,
+.content-first .row {
+  height: 100%;
+}
+
+.content-left {
+  text-align: center;
+}
+.title-content-left {
+  padding-bottom: 10px;
+}
+.content-left-text{
+  color: $main-color;
+  font-size: 17px;
+  line-height: 30px;
+}
 .navbar-nav {
   gap: 20px;
 }
