@@ -128,9 +128,7 @@
         const cards = document.querySelectorAll('.course-card');
         const wrapper = document.getElementById('course-wrapper');
 
-
         if (cards.length > 3 || window.innerWidth < 850) {
-
           wrapper.classList.remove('row', 'justify-content-center');
           wrapper.classList.add('swiper');
 
@@ -140,25 +138,22 @@
           cards.forEach(card => {
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide');
-            slide.appendChild(card);
+            slide.appendChild(card.cloneNode(true));
             swiperWrapper.appendChild(slide);
           });
 
           wrapper.innerHTML = '';
           wrapper.appendChild(swiperWrapper);
-
-          wrapper.insertAdjacentHTML('beforeend', `
-            <div class="swiper-pagination"></div>
-          `);
+          wrapper.insertAdjacentHTML('beforeend', `<div class="swiper-pagination"></div>`);
 
           new Swiper('.swiper', {
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
             pagination: {
               el: '.swiper-pagination',
               clickable: true,
@@ -170,7 +165,7 @@
             }
           });
         }
-        });
+      });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
