@@ -6,7 +6,7 @@ $main-color: #5f5e5e; // Заміни на колір з макету
   font-weight: 300;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 
 body {
@@ -148,6 +148,16 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card-block {
+  text-align: center;
+  padding: 20px 10px;
+  color: white;
+}
+
+.content-statistics {
+  background-color: #2d9cdb;
+  padding: 40px 0;
 }
 
 @media only screen and (max-width: 728px) {
