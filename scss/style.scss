@@ -119,7 +119,7 @@ div .col-4 {
   padding-left: 40px;
 }
 
-hr {
+.course-card hr {
   border: 1px solid rgb(15, 148, 201) !important;
   width: 100%;
 }
@@ -243,6 +243,36 @@ hr {
   }
 }
 
+
+.mentors h4 {
+  padding-top: 30px;
+  text-align: center;
+}
+.mentor .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row .left img{
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor-desc {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.mentor .left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  z-index: 1;
+  position: relative;
+}
+
 @media only screen and (max-width: 728px) {
   .navbar-collapse {
     justify-content: center !important;
@@ -333,6 +363,9 @@ hr {
 
   .card-block-text {
     font-size: 14px;
+  }
+  span .mentor-desc {
+    text-align: center;
   }
 }
 
