@@ -193,6 +193,21 @@
           </div>
         </div>
       </div>
+      <div class="content-video">
+        <div class="container">
+          <h3>Відео</h3>
+          <div class="content-video-text">
+            <span>
+              Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
+            </span>
+          </div>
+          <div class="video">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Java script -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -214,7 +229,7 @@
           cards.forEach(card => {
             const slide = document.createElement('div');
             slide.classList.add('swiper-slide');
-            slide.appendChild(card.cloneNode(true)); // Clone to preserve original structure
+            slide.appendChild(card.cloneNode(true));
             swiperWrapper.appendChild(slide);
           });
 
@@ -223,10 +238,10 @@
           swiperContainer.appendChild(swiperWrapper);
           swiperContainer.insertAdjacentHTML('beforeend', `<div class="swiper-pagination"></div>`);
 
-          wrapper.innerHTML = ''; // Remove original cards
+          wrapper.innerHTML = '';
           wrapper.appendChild(swiperContainer);
 
-          // Initialize Swiper after inserting
+
           new Swiper('#course-wrapper .swiper', {
             slidesPerView: 3,
             spaceBetween: 30,

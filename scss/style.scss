@@ -193,6 +193,9 @@ hr {
   text-align: center;
   padding-top: 50px;
 }
+.content-testimonials .container {
+  padding-bottom: 20px;
+}
 .card-testimony {
   text-align: center;
   padding-bottom: 30px;
@@ -200,6 +203,44 @@ hr {
 
 .slick-slider {
   padding-bottom: 0px;
+}
+
+.content-video {
+  background-color: #e7e7e7;
+
+  .container h3 {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .content-video-text {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .video {
+    padding-bottom: 30px;
+  }
+  .video-wrapper {
+    position: relative;
+    max-width: 1020px;
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+  }
+
+  .content-video-text:empty {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 728px) {
@@ -292,5 +333,11 @@ hr {
 
   .card-block-text {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1050px) {
+  iframe {
+    width: 100%;
   }
 }
