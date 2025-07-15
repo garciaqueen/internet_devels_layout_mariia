@@ -159,7 +159,7 @@
         <div class="container">
           <h2 class="testimony-title">Що кажуть студенти наших курсів:</h2>
           <div class="" id="slider">
-            <div class="slick-slider">
+            <div class="slick-slider testimonials">
               <div class="card-testimony">
                 <span class="testimony-text">
                   <span class="quote">“</span>
@@ -210,7 +210,7 @@
         <div class="container">
           <div class="mentors">
           <h4>Наші ментори</h4>
-            <div class="slick-slider">
+            <div class="slick-slider mentors">
               <div class="mentor">
                 <div class="row d-flex">
                   <div class="left col-12 col-md-4 col-lg-3">
@@ -355,17 +355,36 @@
     });
 
 
-      $(document).ready(function(){
-        $('.slick-slider').slick({
-          dots: true,
-          infinite: true,
-          autoplay: true,
-          autoplaySpeed: 10000,
-          arrows: false,
-          fade: true,
-          cssEase: 'linear'
-        });
+    $(document).ready(function(){
+      $('.slick-slider.testimonials').each(function(){
+        if (!$(this).hasClass('slick-initialized')) {
+          $(this).slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            arrows: false,
+            fade: true,
+            cssEase: 'linear'
+          });
+        }
       });
+    });
+    $(document).ready(function(){
+      $('.slick-slider.mentors').each(function(){
+        if (!$(this).hasClass('slick-initialized')) {
+          $(this).slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            arrows: false,
+            fade: true,
+            cssEase: 'linear'
+          });
+        }
+      });
+    });
     </script>
 
   </body>
