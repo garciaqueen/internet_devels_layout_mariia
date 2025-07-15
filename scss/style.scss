@@ -135,7 +135,7 @@ label.required::after {
   text-align: center;
 }
 
-.slider-course {
+.course-slider {
   padding-bottom: 40px;
 }
 div .col-4 {
@@ -144,7 +144,7 @@ div .col-4 {
 }
 
 .course-card hr {
-  border: 1px solid $main-blue !important;
+  border-top: 2px solid $main-blue !important;
   width: 100%;
 }
 
@@ -167,11 +167,22 @@ div .col-4 {
 .swiper-pagination-bullet-active {
   background-color: black !important;
 }
+.course-card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80px;
+  padding-left: 20px;
+  height: auto;
+}
+
 .course-card {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .content-statistics {
   background-color: $main-blue;
@@ -373,6 +384,8 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media (max-width: 850px) {
@@ -382,6 +395,8 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
     .button {
       background-color: $main-blue;
@@ -400,6 +415,8 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
   }
     .button {
       background-color: $main-blue;
