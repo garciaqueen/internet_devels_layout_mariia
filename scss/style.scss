@@ -31,6 +31,23 @@ body {
   background-color: transparent !important;
   box-shadow: none;
 }
+.navbar-nav {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.navbar-light .nav-link {
+  position: relative;
+  padding: 8px 12px !important;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+.navbar-light .nav-link:not(.btn-app):hover {
+  color: $main-blue !important;
+  background-color: #f1f1f1 !important;
+}
+
 .wrapper .container {
   max-width: 1220px !important;
   padding-left: 15px !important;
@@ -46,7 +63,7 @@ body {
   width: 140px;
 
   &:hover {
-    background-color: rgb(0, 70, 150);
+    background-color: rgb(14, 136, 167);
     color: white !important;
     text-decoration: none;
   }
@@ -98,6 +115,12 @@ label.required::after {
   width: 300px;
   height: 50px;
   align-items: center;
+}
+
+.button:hover {
+  background-color: rgb(14, 136, 167);
+  color: white !important;
+  text-decoration: none;
 }
 .navbar-nav {
   gap: 20px;
@@ -202,9 +225,6 @@ div .col-4 {
   padding-bottom: 30px;
 }
 
-.slick-slider {
-  padding-bottom: 0px;
-}
 
 .content-video {
   background-color: #e7e7e7;
