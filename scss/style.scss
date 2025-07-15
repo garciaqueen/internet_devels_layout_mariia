@@ -1,4 +1,5 @@
 $main-color: #5f5e5e;
+$main-blue: rgb(15, 148, 201);
 
 .open-sans-class {
   font-family: "Open Sans", sans-serif;
@@ -273,6 +274,56 @@ div .col-4 {
   position: relative;
 }
 
+.mentors {
+  padding-bottom: 30px;
+}
+
+.name {
+  color: ;
+}
+.contacts-block ,.container .row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contacts-block {
+  background-color: rgb(15, 148, 201);
+}
+.contacts-block a {
+  color: #fffdfd;
+}
+.contacts-block a:hover {
+  color: #fffdfd;
+}
+
+.footer-block {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .container .footer-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .copyright {
+      color: rgb(15, 148, 201);
+    }
+    .confidentiality a {
+      color: #5f5e5e;
+    }
+  }
+}
+
+
+
 @media only screen and (max-width: 728px) {
   .navbar-collapse {
     justify-content: center !important;
@@ -343,6 +394,11 @@ div .col-4 {
 
 @media (max-width: 576px) {
   .content-statistics .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .contacts-block .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
