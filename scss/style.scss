@@ -37,7 +37,7 @@ body {
   padding-right: 15px !important;
 }
 .btn-app {
-  background-color: rgb(56, 138, 192);
+  background-color: $main-blue;
   border-radius: 25px;
   padding: 8px 20px;
   color: aliceblue !important;
@@ -91,7 +91,7 @@ label.required::after {
 }
 
 .button {
-  background-color: rgb(56, 138, 192);
+  background-color: $main-blue;
   border: none;
   color: #f1f1f1;
   border-radius: 25px;
@@ -121,7 +121,7 @@ div .col-4 {
 }
 
 .course-card hr {
-  border: 1px solid rgb(15, 148, 201) !important;
+  border: 1px solid $main-blue !important;
   width: 100%;
 }
 
@@ -151,7 +151,7 @@ div .col-4 {
   align-items: center;
 }
 .content-statistics {
-  background-color: rgb(15, 148, 201);
+  background-color: $main-blue;
 }
 
 .content-statistics .container .row {
@@ -279,7 +279,7 @@ div .col-4 {
 }
 
 .name {
-  color: ;
+  color: $main-blue;
 }
 .contacts-block ,.container .row {
   padding-top: 20px;
@@ -292,7 +292,7 @@ iframe {
 }
 
 .contacts-block {
-  background-color: rgb(15, 148, 201);
+  background-color: $main-blue;
 }
 .contacts-block a {
   color: #fffdfd;
@@ -314,7 +314,7 @@ iframe {
     gap: 15px;
 
     .copyright {
-      color: rgb(15, 148, 201);
+      color: $main-blue;
     }
     .confidentiality a {
       color: #5f5e5e;
@@ -364,7 +364,7 @@ iframe {
     align-items: center;
   }
     .button {
-      background-color: rgb(56, 138, 192);
+      background-color: $main-blue;
       border: none;
       color: #f1f1f1;
       border-radius: 25px;
@@ -382,7 +382,7 @@ iframe {
     align-items: center;
   }
     .button {
-      background-color: rgb(56, 138, 192);
+      background-color: $main-blue;
       border: none;
       color: #f1f1f1;
       border-radius: 25px;
